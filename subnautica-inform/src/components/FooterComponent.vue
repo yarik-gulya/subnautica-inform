@@ -7,8 +7,8 @@
       <a href="/privacy">Політика</a>
     </div>
     <div class="socials">
-      <img src="discord.svg" alt="Discord" />
-      <img src="youtube.svg" alt="YouTube" />
+      <!-- <img src="discord.svg" alt="Discord" />
+      <img src="youtube.svg" alt="YouTube" /> -->
     </div>
     <p>© 2025 Subnautica-Inform. Усі права захищено.</p>
   </div>
