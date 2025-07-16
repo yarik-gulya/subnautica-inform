@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div id="body">
+        
         <header>
             <img src="../images/Subnautica_logo.png" alt="Subnautica Logo">
             <nav>
@@ -10,7 +11,7 @@
                 </ul>
             </nav>
         </header>
-        <main style="margin-top: 80px;">
+        <main>
             <router-view />
         </main>
     </div>
@@ -25,18 +26,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 43, 54, 0.9);
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 98%;
-    z-index: 1000;
+    padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -47,6 +43,7 @@ header img {
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-around;
     gap: 40px;
     margin: 0;
     padding: 0;
@@ -66,5 +63,15 @@ nav ul li:hover {
 nav ul li a {
     text-decoration: none;
     color: inherit;
+}
+
+#body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-size: cover;
+    background: linear-gradient(to top, #0f2027 0%, #2c5364 100%);
 }
 </style>

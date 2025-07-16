@@ -21,10 +21,6 @@ footer {
   color: #E0E8F0;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 .container {
   max-width: 1200px;
@@ -36,7 +32,6 @@ footer {
     display: flex;  
     justify-content: center;
     gap: 50px;
-    margin: 10px;
 }
 
 .container .footer-links a{
