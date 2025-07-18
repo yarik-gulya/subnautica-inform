@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 h2 {
-  margin-top: 5px;
+  margin-top: 0;
   color: #E0E8F0;
   text-align: center;
   background-color: orangered;

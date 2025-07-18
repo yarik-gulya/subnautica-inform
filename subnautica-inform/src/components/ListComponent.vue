@@ -10,7 +10,7 @@
             </router-link>
         </div>
         <div>
-            <router-link to="">
+            <router-link to="/catalog/fauna" active-class="active-link">
                 <img src="" alt="">
                 <h3>Фауна</h3>
                 <p>Тут інформація про тварин.</p>

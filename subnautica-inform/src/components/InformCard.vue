@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :src="image" alt="">
+        <img :src="image" :alt="alt">
         <h2>{{ name }}</h2>
         <p>{{ description }}</p>
         <p>{{ area }}</p>
@@ -13,10 +13,10 @@ export default {
         name: String,
         image: String,
         description: String,
-        area: String,
-        plants: {
-            type: Array,
-            required: true
+        area: Array,
+        alt: {
+            type: String,
+            default: 'Informative image'
         }
     }
 }

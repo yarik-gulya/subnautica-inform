@@ -1,6 +1,6 @@
+<!-- Додано клас для body для кращого фону -->
 <template>
     <div id="body">
-        
         <header>
             <img src="../images/Subnautica_logo.png" alt="Subnautica Logo">
             <nav>
@@ -31,9 +31,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 43, 54, 0.9);
+    background: rgba(24, 34, 56, 0.95);
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 12px rgba(20, 30, 60, 0.5);
 }
 
 header img {
@@ -50,14 +50,14 @@ nav ul {
 }
 
 nav ul li {
-    color: #E0E8F0;
+    color: #AEEFFF;
     font-weight: 500;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 nav ul li:hover {
-    color: #FFA400;
+    color: #FFD166;
 }
 
 nav ul li a {
@@ -72,6 +72,6 @@ nav ul li a {
 
 main{
     background-size: cover;
-    background: linear-gradient(to top, #0f2027 0%, #2c5364 100%);
+    background: linear-gradient(to top, #232946 0%, #395886 100%);
 }
 </style>
