@@ -17,7 +17,7 @@
 
 <style scoped>
 footer {
-  background: rgba(0, 43, 54, 0.9);
+  background: rgb(39, 2, 99);
   color: #E0E8F0;
   text-align: center;
   padding: 20px;

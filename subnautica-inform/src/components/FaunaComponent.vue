@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <router-link to="/catalog">Назад до каталогу</router-link>
+    <div id="card-container">
         <SearchComponent :objects="objects" @filtered="handleFiltered" />
         <h2>Фауна</h2>
         <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
@@ -8,10 +7,19 @@
     </div>
 </template>
 
+<style scoped>
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+</style>
+
 <script>
 import { ref } from 'vue';
 import InformCard from './InformCard.vue'
-import SearchComponent from '../components/SearchComponent.vue'
+import SearchComponent from './SearchComponent.vue'
 
 export default {
     components: {

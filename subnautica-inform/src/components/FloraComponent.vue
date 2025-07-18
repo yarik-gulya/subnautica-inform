@@ -1,6 +1,5 @@
 <template>
     <div>
-        <router-link to="/catalog">Назад до каталогу</router-link>
         <SearchComponent :objects="objects" @filtered="handleFiltered" />
         <h2>Флора</h2>
         <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
@@ -10,7 +9,7 @@
 
 <script>
 import { ref } from 'vue';
-import SearchComponent from '../components/SearchComponent.vue'
+import SearchComponent from './SearchComponent.vue'
 import InformCard from './InformCard.vue';
 
 

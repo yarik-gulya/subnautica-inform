@@ -4,7 +4,8 @@ import MainPage from './pages/MainPage.vue';
 import CatalogPage from './pages/CatalogPage.vue';
 import ListComponent from './components/ListComponent.vue';
 import FloraComponent from './components/FloraComponent.vue';
-import FaunaComponent from './components/FaunaComponent.vue'
+import FaunaComponent from './components/FaunaComponent.vue';
+import MaterialComponent from './components/MaterialComponent.vue'
 
 const routes = [
   {
@@ -19,7 +20,8 @@ const routes = [
         children: [
           {path: '/catalog',component: ListComponent},
           {path: '/catalog/flora',component: FloraComponent},
-          {path: '/catalog/fauna',component: FaunaComponent}
+          {path: '/catalog/fauna',component: FaunaComponent},
+          {path: '/catalog/materials',component: MaterialComponent},
         ],
       },
     ],
