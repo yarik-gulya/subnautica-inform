@@ -1,14 +1,16 @@
 <template>
-    <div id="card-container">
+    <div>
         <SearchComponent :objects="objects" @filtered="handleFiltered" />
         <h2>Фауна</h2>
-        <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
-            :description="object.description" :area="object.area" />
+        <div class="card-container">
+            <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
+                :description="object.description" :area="object.area" />
+        </div>
     </div>
 </template>
 
 <style scoped>
-#card-container {
+.card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
