@@ -43,7 +43,7 @@ export default {
     background: rgba(24, 34, 56, 0.9);
     padding: 40px 20px;
     max-width: 600px;
-    margin: 100px auto 40px;
+    margin: 0px auto 40px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(20, 30, 60, 0.5);
     text-align: center;

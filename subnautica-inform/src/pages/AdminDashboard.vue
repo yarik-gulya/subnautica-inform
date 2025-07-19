@@ -19,9 +19,6 @@
 <script>
 export default {
     name: 'AdminDashboard',
-    components: {
-        
-    },
 }
 </script>
 
@@ -70,6 +67,8 @@ nav ul li a {
 }
 
 main{
+    min-height: 100vh;
+    padding: 40px;
     background-size: cover;
     background: linear-gradient(to top, #232946 0%, #395886 100%);
     height: 100%;

@@ -28,7 +28,8 @@ const routes = [
       },
       { path: 'contact', component: ContactPage },
       { path: 'about', component: AboutPage },
-      { path: 'privacy', component: () => import('./pages/PrivacyPage.vue') }
+      { path: 'privacy', component: () => import('./pages/PrivacyPage.vue') },
+      { path: '/relax', component: () => import('./pages/RelaxPage.vue') }
     ],
   },
   {

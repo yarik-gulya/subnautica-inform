@@ -1,7 +1,7 @@
 <template>
     <div>
-        <SearchComponent :objects="objects" @filtered="handleFiltered" />
         <h2>Ресурси</h2>
+        <SearchComponent :objects="objects" @filtered="handleFiltered" />
         <div class="card-container">
             <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
                 :description="object.description" :area="object.area" />
@@ -9,7 +9,15 @@
     </div>
 </template>
 
-<style>
+<style scoped>
+h2 {
+    margin-top: 0;
+    color: #E0E8F0;
+    text-align: center;
+    background-color: orangered;
+    padding: 20px;
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
