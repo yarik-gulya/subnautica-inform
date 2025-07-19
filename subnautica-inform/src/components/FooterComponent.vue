@@ -2,13 +2,9 @@
     <footer>
   <div class="container">
     <div class="footer-links">
-      <a href="/about">Про сайт</a>
-      <a href="/contacts">Контакти</a>
-      <a href="/privacy">Політика</a>
-    </div>
-    <div class="socials">
-      <!-- <img src="discord.svg" alt="Discord" />
-      <img src="youtube.svg" alt="YouTube" /> -->
+      <router-link to="about">Про сайт</router-link>
+      <router-link to="contact">Контакти</router-link>
+      <router-link to="privacy">Політика</router-link>
     </div>
     <p>© 2025 Subnautica-Inform. Усі права захищено.</p>
   </div>
@@ -27,8 +23,7 @@ footer {
   margin: 0 auto;
   padding: 0 20px;
 }
-.container .footer-links,
-.container .socials {
+.container .footer-links{
     display: flex;  
     justify-content: center;
     gap: 50px;
@@ -42,9 +37,8 @@ footer {
 .container .footer-links a:hover {
     color: #FFA400;
 }
+
+p {
+  margin-top: 30px;
+}
 </style>
-
-<script>
-
-</script>
-

@@ -5,7 +5,9 @@ import CatalogPage from './pages/CatalogPage.vue';
 import ListComponent from './components/ListComponent.vue';
 import FloraComponent from './components/FloraComponent.vue';
 import FaunaComponent from './components/FaunaComponent.vue';
-import MaterialComponent from './components/MaterialComponent.vue'
+import MaterialComponent from './components/MaterialComponent.vue';
+import ContactPage from './pages/ContactPage.vue';
+import AboutPage from './pages/AboutPage.vue'
 
 const routes = [
   {
@@ -24,6 +26,9 @@ const routes = [
           {path: '/catalog/materials',component: MaterialComponent},
         ],
       },
+      { path: 'contact', component: ContactPage },
+      { path: 'about', component: AboutPage },
+      { path: 'privacy', component: () => import('./pages/PrivacyPage.vue') }
     ],
   },
   {

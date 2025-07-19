@@ -1,4 +1,3 @@
-<!-- Додано клас для body для кращого фону -->
 <template>
     <div id="body">
         <header>
@@ -7,7 +6,7 @@
                 <ul>
                     <li><router-link to="/main">Головна</router-link></li>
                     <li><router-link to="/catalog">Каталог</router-link></li>
-                    <li><router-link to="/contacts">Контакти</router-link></li>
+                    <li><router-link to="/relax">Релакс</router-link></li>
                 </ul>
             </nav>
         </header>
@@ -73,5 +72,6 @@ nav ul li a {
 main{
     background-size: cover;
     background: linear-gradient(to top, #232946 0%, #395886 100%);
+    height: 100%;
 }
 </style>

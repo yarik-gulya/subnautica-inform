@@ -1,10 +1,12 @@
 <template>
+    <div class="cards-wrapper">
         <div class="info-card">
             <img :src="image" :alt="alt">
             <h2>{{ name }}</h2>
             <p>{{ description }}</p>
             <p>{{ area }}</p>
         </div>
+    </div>
 </template>
 
 <script>
@@ -23,41 +25,48 @@ export default {
 </script>
 
 <style scoped>
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
 .info-card {
-    background: rgba(24, 34, 56, 0.95);
-    border-radius: 12px;
-    padding: 30px 20px;
-    max-width: 400px;
-    margin: 40px auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    color: #AEEFFF;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(24, 34, 56, 0.95);
+  width: 300px;
+  height: 400px;
+  border-radius: 12px;
+  padding: 20px;
+  color: #AEEFFF;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .info-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .info-card img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .info-card h2 {
-    font-size: 28px;
-    color: #00BFCB;
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: #00BFCB;
+  margin-bottom: 8px;
 }
 
 .info-card p {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #E0E8F0;
+  font-size: 14px;
+  color: #E0E8F0;
+  margin-bottom: 6px;
 }
 </style>

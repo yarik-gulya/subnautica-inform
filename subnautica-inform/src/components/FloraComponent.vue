@@ -2,10 +2,22 @@
     <div>
         <SearchComponent :objects="objects" @filtered="handleFiltered" />
         <h2>Флора</h2>
-        <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
-            :description="object.description" :area="object.area" />
+        <div class="card-container">
+            <InformCard v-for="object in filteredObjects" :key="object.id" :name="object.name" :image="object.image"
+                :description="object.description" :area="object.area" />
+        </div>
     </div>
 </template>
+
+<style>
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+</style>
 
 <script>
 import { ref } from 'vue';

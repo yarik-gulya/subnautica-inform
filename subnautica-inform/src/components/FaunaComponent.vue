@@ -13,6 +13,7 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 20px;
 }
@@ -73,10 +74,12 @@ export default {
                 image: ''
             },
         ])
+
         const filteredObjects = ref(objects.value);
         function handleFiltered(data) {
             filteredObjects.value = data
         }
+
         return {
             objects,
             filteredObjects,
