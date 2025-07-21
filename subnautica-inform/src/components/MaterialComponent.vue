@@ -92,8 +92,8 @@ export default {
         const filteredObjects = ref(objects.value);
         function handleFiltered(data) {
             filteredObjects.value = data
-        };
-        
+        }
+
         return {
             objects,
             filteredObjects,

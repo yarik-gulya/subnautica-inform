@@ -2,9 +2,9 @@
     <footer>
   <div class="container">
     <div class="footer-links">
-      <router-link to="about">Про сайт</router-link>
-      <router-link to="contact">Контакти</router-link>
-      <router-link to="privacy">Політика</router-link>
+      <router-link to="/about">Про сайт</router-link>
+      <router-link to="/contact">Контакти</router-link>
+      <router-link to="/privacy">Політика</router-link>
     </div>
     <p>© 2025 Subnautica-Inform. Усі права захищено.</p>
   </div>

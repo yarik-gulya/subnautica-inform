@@ -29,7 +29,7 @@ const routes = [
       { path: 'contact', component: ContactPage },
       { path: 'about', component: AboutPage },
       { path: 'privacy', component: () => import('./pages/PrivacyPage.vue') },
-      { path: '/relax', component: () => import('./pages/RelaxPage.vue') }
+      { path: 'profile', component: () => import('./pages/ProfilePage.vue') }
     ],
   },
   {

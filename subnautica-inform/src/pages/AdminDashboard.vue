@@ -6,7 +6,7 @@
                 <ul>
                     <li><router-link to="/main">Головна</router-link></li>
                     <li><router-link to="/catalog">Каталог</router-link></li>
-                    <li><router-link to="/relax">Релакс</router-link></li>
+                    <li><router-link to="/profile">Профіль</router-link></li>
                 </ul>
             </nav>
         </header>
