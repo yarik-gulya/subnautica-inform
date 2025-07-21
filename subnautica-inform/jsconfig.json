@@ -17,6 +17,6 @@
     ]
   },
   "exclude": [
-    "src/components/*.vue"
+    "src/**/*.vue"
   ]
 }
